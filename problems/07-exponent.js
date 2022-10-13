@@ -22,26 +22,54 @@ exponent(5, 5); // 3125
 // 1. base case: if power === 0 || num === 0;
 // 2. recursion case: num !== 0 && power !== 0
 
-function exponent(num, power) {
-    debugger
-    if (power === 0) {
-        debugger
-        return 1;
-    }
 
-    debugger
 
-    if (power < 0) {
-        debugger
-        return 1 / exponent(num, Math.abs(power))
-    }
-    debugger
-    return num * exponent(num, power - 1)
-}
-  
+// function exponent(num, power) {
+//     debugger
+//     // if (power === 0 || num === 0) return 0;
+//     debugger
+//     if (power > 0) {
+//         if (power === 1) {
+//             debugger
+//             return num
+//         }
+//         debugger
+//         return num * exponent(num, power - 1)
+//     } else if (power < 0) {
+//         debugger
+//         if (power === -1) {
+//             debugger
+//             return num
+//         }
+//         debugger
+//         return 1 / num * exponent(num, power + 1)
+//     }
+// }
+
 console.log(exponent(3, 2)); // 9
 console.log(exponent(2, -4)); // 1/4 (or 0.25)
 console.log(exponent(5, 5)); // 3125
+
+
+
+// function exponent(num, power) {
+//     debugger
+//     if (power === 0) {
+//         debugger
+//         return 1;
+//     }
+
+//     debugger
+
+//     if (power < 0) {
+//         debugger
+//         return 1 / exponent(num, Math.abs(power))
+//     }
+//     debugger
+//     return num * exponent(num, power - 1)
+// }
+  
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
